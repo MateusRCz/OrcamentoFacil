@@ -1,0 +1,72 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    padding: 0%;
+    margin: 0%;
+    min-width: 100vh;
+    
+}
+
+main {
+    padding: 10px;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    background-color: #124534;
+    height: 100vh;
+}
+
+span {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+i {
+    color: rgb(158, 158, 158);
+    width: 30px;
+    
+}
+
+
+.layout {
+    width: 428px;
+    height: 992px;
+    background-color: rgb(0, 255, 213);
+    
+}
+
+.layService {
+    
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+    height: 70px;
+    width: 350px;
+    box-shadow: 1px 5px 10px 2px rgba(169, 169, 169, 0.5);
+    overflow: hidden;
+}
+
+.layService ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.iconEdit {
+    color: aqua;
+}
+
+.item {
+    overflow: hidden;
+}
