@@ -3,53 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gera Orcamentos</title>
+    <title>Orçamento Fácil</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="/assets/home.css">
     <link rel="stylesheet" href="/assets/index.css">
+    <link rel="stylesheet" href="/assets/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="sideBar">
-        <ul>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </li>
-            <li>
-                <a href="home.html">
-                    
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span>
-                        Pesquisa
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <i class="fa-solid fa-plus"></i>
-                    <span>
-                        Criar
-                    </span>
-                </a>
-            </li>
+    <nav class="sideBar_conteiner">
+        <div id="sideBar-header">
+            <button id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="sideBar-body">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Pesquisar</span>
+            </button>
+            <button>
+                <i class="fa-solid fa-plus"></i>
+                <span>Criar</span>
+            </button>
+            <button>
+                <i class="fa-solid fa-plus"></i>
+                <span >Calendário</span>
+            </button>
             
-        </ul>
+        </div>
+        
     </nav>
+    
 
-    <main>
-        <h2>Dados do cliente: </h2>
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="Endereco">
+    <main class="form_container">
+        <div class="form_header">
+            <h1>Cadastro orçamento</h1>
+        </div>
 
-           
+        <div class="container_form">
+            <form action="" id="form">
+                <div id="input_container">
+                    <div class="input-data">
+                        <label for="name">
+                            Data
+                        </label>
+                        <input id="inputData" type="date" name="name" placeholder="dd/mm/aaaa">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">
+                            Cliente
+                        </label>
+                        <input id="inputNome" type="text" name="name" placeholder="Nome do cliente">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">
+                            Endereço
+                        </label>
+                        <input id="inputAdress" type="text" name="name" placeholder="Endereço do cliente">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">
+                            Telefone
+                        </label>
+                        <input id="inputT" type="number" name="name" placeholder="Telefone do cliente">
+                        <i class="fa-solid fa-phone"></i>
+                        <button>teste</button>
+                    </div>
+
+                    
+                </div>   
+                
+                    
+            </form>
+        </div>
+        <div class="conteiner_btn">
+            <button id="btnAdditem" data-modal="modal-1">Adicionar item <i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <div id="container_services">
+            <div class="service">
+                <span>Descrição do serviço</span>
+                <span>Local</span>
+                <span>R$0,00</span>
+                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                <span><i><img src="/assets/icons/recycle.svg" alt=""></i></span>
+            </div>
+
+        </div>
+
+        <dialog id="modal-1">
+            <h1>Adicionar novo item</h1>
+            <label for="">Descrição do serviço</label>
+            <input type="text">
+            <label for="">Local</label>
+            <select name="role" id="">
+                <option value="tipo">Selecione o local</option>
+                <option value="Sala">Sala</option>
+                <option value="Quarto">Quarto</option>
+                <option value="Cozinha">Cozinha</option>
+                <option value="Lavanderia">Lavanderia</option>
+                <option value="Garagem">Garagem</option>
+                <option value="Banheiro">Banheiro</option>
+            </select>
+            <label for="">Valor</label>
+            <input type="number">
+            <button>Enviar</button>
+        </dialog>
+
+        <footer class="footer">
+            <span>Total</span>
+
+        </footer>
+        
     </main>
 
-    
+    <script src="indeex.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>

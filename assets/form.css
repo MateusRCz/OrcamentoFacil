@@ -1,0 +1,157 @@
+
+.form_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin: 10px;
+    position: relative;
+
+}
+
+.form_header {
+    background-color: rgb(245, 207, 157);
+    margin: 10px;
+}
+
+#form {
+    background-color: rgb(224, 184, 136);
+    width: 100%;
+    margin: 10px;
+    
+}
+
+.container_form {
+    display: flex;
+    width: 100%;
+    background-color: rgb(211, 173, 122);
+    
+}
+
+.input-data {
+    margin-left: 70%;
+}
+
+.container_servicos_header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.container_servicos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.input-box{
+    display: flex;
+}
+
+#input_container label{
+    width: 80px;
+    
+}
+
+#input_container input{
+    max-width: 50%
+    
+}
+
+.service {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-evenly;
+    height: 10%;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.conteiner_btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 3%;
+}
+
+
+#btnAdditem {
+    background-color: #93E47E;
+    border: none;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 10%;
+    width: 92%;
+    position: fixed;
+    top: 90%;
+    border-radius: 10px;
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer span {
+    margin-right: 150px;
+}
+
+.footer button{
+    background-color: #43cb21;
+    color: white;
+    border: none;
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+#container_services{
+    height: 100%;
+}
+
+.modaltest {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+}
+
+.modaltest::backdrop {
+    background-color: rgb(0 0 0 / .5);
+}
+
+.modaltest.active {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+
+
+}
+
+.modal-header {
+    display: flex;
+    gap: 16px;
+}
+
+.modal-exit{
+    width: 16px;
+    height: 21px;
+    background-color: red;
+    color: white;
+}

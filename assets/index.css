@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     display: flex;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
     padding: 0%;
     margin: 0%;
     min-width: 100vh;
@@ -21,21 +24,38 @@ main {
     flex-direction: column;
     background-color: #124534;
     height: 100vh;
+    width: auto;
+    align-items: center;
 }
 
-span {
-    color: white;
+.sideBar .bot {
+    visibility: hidden;
 }
 
-li {
-    list-style-type: none;
+.sideBar ul{
     padding: 10px;
 }
 
-i {
-    color: rgb(158, 158, 158);
-    width: 30px;
-    
+.sideBar li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.sideBar button {
+    background: transparent;
+    border: none;
+    color: aliceblue;
+}
+
+/*.active {
+    width: 0;
+    height: 0;
+    color: tomato;
+}*/
+
+#voltar {
+    min-width: 10px;
+    overflow: hidden;
 }
 
 
@@ -50,10 +70,11 @@ i {
     
     background-color: rgb(255, 255, 255);
     margin-top: 0px;
-    height: 70px;
-    width: 350px;
+    width: 100%;
     box-shadow: 1px 5px 10px 2px rgba(169, 169, 169, 0.5);
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .layService ul{
@@ -67,6 +88,8 @@ i {
     color: aqua;
 }
 
-.item {
-    overflow: hidden;
+
+#video {
+    width: 80%;
 }
+
